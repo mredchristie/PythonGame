@@ -12,6 +12,7 @@ import random
 
 def create_grid(size):
  # this is an edit
+  r , c = (size, size)
     """
     This function creates a square grid where each side is as long as 'size'.
     The grid should be held in a two-dimensional list: that is, a
