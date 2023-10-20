@@ -35,9 +35,6 @@ def create_grid(size):
 
 
 def add_rocks(grid, difficulty):
-  global arr
-  global row
-
     """
     This functions adds rocks(*) to the grid, then returns the updated grid.
     The number of rocks should be: 15 minus the difficulty level. For

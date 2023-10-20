@@ -15,12 +15,13 @@ from player_actions import *
 from enemy_actions import *
 # add any other imports you feel are relevant here
 
+sizeofgrid = int(10)
+
 if __name__ == "__main__":
     # this is where the code should go that runs the game.
     # you can leave the following line in or take it out, up to you:
     print("PIRATES!")
-    difficulty = int(input("Difficulty >"))
-    sizeofgrid = int(input("Size of grid >"))
+    difficulty = int(input("Difficulty 1 - 10 >"))
     create_grid(sizeofgrid)
   
     # add any other code you feel is relevant here
