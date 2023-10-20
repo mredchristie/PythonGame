@@ -10,9 +10,9 @@ additional functions if you wish.
 import random
 
 
+
 def create_grid(size):
  # this is an edit
-  r , c = (size, size)
     """
     This function creates a square grid where each side is as long as 'size'.
     The grid should be held in a two-dimensional list: that is, a
@@ -27,11 +27,17 @@ def create_grid(size):
     """
 
     # put your code to create the grid here
+    arr = [[0 for i in range(size)] for j in range(size)]
+    for row in arr:
+      print(row)
 
-    return grid
+    return arr
 
 
 def add_rocks(grid, difficulty):
+  global arr
+  global row
+
     """
     This functions adds rocks(*) to the grid, then returns the updated grid.
     The number of rocks should be: 15 minus the difficulty level. For

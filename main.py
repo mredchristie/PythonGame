@@ -10,12 +10,17 @@ Note: to call functions from other modules, you need to
 include the module name; e.g. setup_game.create_grid()
 """
 
-import setup_game
-import player_actions
-import enemy_actions
+from setup_game import *
+from player_actions import *
+from enemy_actions import *
 # add any other imports you feel are relevant here
 
 if __name__ == "__main__":
     # this is where the code should go that runs the game.
     # you can leave the following line in or take it out, up to you:
     print("PIRATES!")
+    difficulty = int(input("Difficulty >"))
+    sizeofgrid = int(input("Size of grid >"))
+    create_grid(sizeofgrid)
+  
+    # add any other code you feel is relevant here
